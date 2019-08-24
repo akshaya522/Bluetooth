@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        // make tablet discoverable
         mDiscoverBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // print paired device
         mPairedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -149,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
 
     //toast message function
     private void showToast(String msg){
