@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    // for the cross button of the pop-up
+    <TextView
+        android:id="@+id/closepop"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#111"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circlebackground"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/statusBluetoothTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <ImageView
+            android:id="@+id/bluetoothTv"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        //on bluetooth button
+        <Button
+            android:id="@+id/onBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Btn"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        // off bluetooth button
+        <Button
+            android:id="@+id/offBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Off Btn"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        //discover bluetooth button
+        <Button
+            android:id="@+id/discoverableBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover Bluetooth"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        // paired button to see paired devices
+        <Button
+            android:id="@+id/pairedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Paired Devices"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <TextView
+            android:id="@+id/pairedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+</LinearLayout>
